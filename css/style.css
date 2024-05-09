@@ -414,3 +414,17 @@ i:hover {
 }
 
 
+.hand {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+}
+
+.hand1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  transform: rotateY(180deg);
+}
