@@ -250,7 +250,7 @@ body {
   color: tomato;
   font-family: "Inter", sans-serif;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden !important;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -277,12 +277,12 @@ body {
   height: auto;
   border-radius: 50%;
   border: 3px solid tomato;
+  box-shadow: 0 0 10px tomato;
+  transition: transform 0.3s;
 }
 
 .profilePic:hover {
   transform: translateY(-10px);
-  transition: transform 0.3s;
-  cursor: pointer;
 }
 
 .profileInfo {
@@ -392,4 +392,23 @@ i {
 
 i:hover {
   transform: scale(1.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-top: 3px solid tomato;
+}
+
+.navbar a {
+  color: tomato;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: bisque;
+  transition: color 0.3s;
 }

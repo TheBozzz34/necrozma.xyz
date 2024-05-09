@@ -25,15 +25,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/06cbfde780.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
   <main>
-
-
+    <div class="navbar">
+      <a href="#" class="nav-item">[ HOME ]</a>
+      <a href="#" class="nav-item">[ PROJECTS ]</a>
+      <a href="#" class="nav-item">[ BLOG ]</a>
+      <a href="#" class="nav-item">[ ABOUT ]</a>
+    </div>
     <div class="container">
       <div class="profilePicContainer">
-        <img src="https://static.miraheze.org/pgrwiki/0/0d/Dialogue-2B-Icon.png" alt="Necrozma" id="profile-picture" class="profilePic" />
+        <img draggable="false" src="https://static.miraheze.org/pgrwiki/0/0d/Dialogue-2B-Icon.png" alt="Necrozma" id="profile-picture" class="profilePic" />
       </div>
       <div class="profileInfo">
         <h1 class="title">
@@ -56,6 +61,7 @@
     </div>
 
 
+    <div id="particles-js" class="canvas"></div>
     <canvas id="canvas" class="canvas"></canvas>
 
   </main>
